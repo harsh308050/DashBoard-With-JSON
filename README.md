@@ -7,7 +7,7 @@
 
 
 
-<h3>Figma Design [Also Webpage :) don't have difference]</h3>
+<h3>Figma Design [Also Webpage :) No Difference]</h3>
 <hr>
 <h1>Collapsed Journey board</h1>
 
