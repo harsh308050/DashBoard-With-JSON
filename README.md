@@ -1,4 +1,4 @@
-<h1>DeepThought Internship Task</h1>
+<h1>DeepThought ShortListing Tasks</h1>
 
 <h3>Tasks</h3>
 <hr>
