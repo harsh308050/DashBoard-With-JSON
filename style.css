@@ -1,0 +1,594 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Mitr", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    /* position: relative; */
+    background-color: #f0f0f0;
+    /* z-index: 1; */
+    padding:0 2rem;
+    overflow: hidden;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);}
+
+.navbar{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    height: 10vh;
+    gap:50%;
+}
+
+
+.icon{
+    color: white;
+    font-size: 1.2rem;
+}
+.icon1{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#navigation{
+    list-style: none;
+    display: flex;
+    flex-direction:row ;
+    gap:3.5rem;
+    cursor: pointer;
+}
+
+#navigation li{
+    background-color: rgb(0, 41, 255);
+    border-radius: 50% ;
+    width: 2rem;
+    height:2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation li:last-child{
+    all: unset;
+    color: rgb(0, 41, 255);
+    font-size: 1.3rem;
+}
+
+
+
+section{
+    padding-top: 4vh;
+    height: 90vh;
+    margin: 0px 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head h1{
+    color:rgb(0, 41, 255);
+}
+
+.btn{
+    all:unset;
+    color: white;
+    background-color: rgb(0, 41, 255);
+    border: solid transparent 3px;  
+    padding: 5px 15px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    &:hover{
+        color: rgb(0, 41, 255);
+        background-color: white;
+        border: solid rgb(42, 82, 183) 3px  ;
+    }
+}
+
+
+.subDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.taskHead {
+  background-color: #E9ECEF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.taskHead h2 {
+  font-weight: 600;
+}
+
+.taskHead p {
+  margin: 0.7rem 0px;
+}
+
+
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card{
+  height: 72vh;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0rem 0rem 1rem 1rem;
+  margin: 1.2rem;
+  flex: 1;
+  box-shadow: 0px 4px 4px 0px #00000066;
+}
+
+.upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  height: 7vh;
+  border-radius: 1rem 1rem 0rem 0rem;
+  border: solid black 0.5rem;
+  color: white;
+  background-color: black;
+}
+
+
+.middle{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color:white;
+  padding: 0.6rem;
+  font-size: 1rem;
+
+}
+
+.lower{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 34rem;  
+  background-color: rgba(0, 0, 0, 0.101);
+  overflow: hidden;
+}
+
+embed{
+  width: 36vw;
+  aspect-ratio: 16/9;
+}
+
+.cardHead h2{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+.lowerCardContent{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+}
+
+
+.lowerHead{
+  display: flex;
+  align-items: center;
+  width: 36vw;
+  gap: 3rem;
+  background-color: rgba(254, 255, 192, 0.2);
+}
+
+.lowerHead i{
+  font-size: 1.2rem;
+  margin-left: 1rem ;
+}
+
+.lowerHead h2{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.lower-sec-upper{
+  display: flex;
+  justify-content:space-evenly;
+  gap: 2rem;
+  padding: 1rem 1rem;
+
+}
+
+.subThread{
+  border-radius: 0.6rem;
+  background-color: rgb(227, 227, 227);
+  border: solid rgba(51, 51, 51, 1) 0.1px;
+  box-shadow: 2px -2px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.upper-subThread{
+  background-color:  rgb(227, 227, 227);
+  border-radius: 0.8rem 0.8rem 0 0;
+  padding: 0.4rem;
+
+}
+
+.upper-subThread h2{
+  font-size:1rem;
+  font-weight: 400;
+
+}
+
+.lower-subThread{
+  border-top: solid rgba(51, 51, 51, 1) 0.1px;
+  background-color: white;
+  border-radius:  0.6rem;
+  padding: 0.2rem;
+}
+
+.lower-subThread textarea {
+  all: unset;
+  color: black;
+}
+
+.lower-subThread textarea::placeholder {
+  color:rgba(108, 117, 125, 1);
+}
+
+
+.lower-sec-middle{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lower-sec-middle-icons {
+  display: flex;
+  gap:2rem;
+  font-size: 1.3rem;
+}
+
+.lower-sec-middle-dropdowns{
+  display: flex;
+  gap:2rem;
+}
+
+.lower-sec-middle-dropdowns select {
+  font-size: 1rem;
+  border: none;
+  width: 8vw;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+
+.lower-sec-lower{
+  padding: 0 1rem;
+
+}
+
+.lower-sec-lower button{
+  margin: 0.5rem;
+}
+
+.lower-sec-lower .subThread{
+  margin-bottom: 2rem; 
+
+}
+
+.lower-sec-lower textarea{
+  width: 33vw;
+  resize: none;
+}
+
+
+.lowerCardContent-upper,.lowerCardContent-lower{
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  row-gap: 0.6rem;
+}
+
+.lowerContent-title h2{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.lowerContent-text{
+    display: flex;
+    justify-content: center;
+}
+
+.lowerContent-text input{
+  all:unset;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 3rem;
+  box-shadow: -1px 4px 8px 2px rgba(0, 0, 0, 0.15);
+
+}
+
+.lowerCard-Editor {
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 0.1rem;
+}
+
+.Editor-button-group1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Editor-button-group1 button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(97, 97, 97);
+}
+
+.Editor-button-group1 button:hover {
+  color: rgb(0, 41, 255);
+}
+
+
+.Editor-button-group2 {
+  margin: 0.5rem 0rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.Editor-button-group2 button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: rgb(97, 97, 97);
+}
+
+.Editor-button-group2 button:hover {
+  color: rgb(0, 41, 255);
+}
+
+.Editor-button-group2 select{
+  all: unset;
+  padding: 0px 30px;
+  background: rgba(235, 235, 235, 1);
+  color: rgb(97, 97, 97);
+}
+
+.Editor-button-group2 select:hover {
+  color: rgb(0, 0, 0);
+}
+
+.Editor-body textarea{
+  all: unset;
+  width: 31vw;
+  height: 15vh;
+  resize: none;
+  box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+#paragraph{
+  cursor: pointer;
+}
+
+.btns{
+  padding: 0.2rem 1rem ;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.18);
+
+}
+
+
+.sideCollapsed{
+  width: 5rem;
+  height: 60vh;
+  overflow: hidden;
+  position: fixed;
+  top:15%;
+  background: rgb(253, 253, 253);
+  border-radius: 0 1rem 1rem 1rem ;
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.5);
+  transition: width 0.3s linear;
+
+}
+
+.sideBody1{
+  margin: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:solid rgb(0, 41, 255) 2px;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.sideBody1 h2{
+  font-weight: 400;
+}
+
+.sideBody2{
+  display: none;
+ }
+
+ 
+ .heading{
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  padding:0.7rem 1rem; 
+  background-color: black;
+  gap: 10rem;
+  color:white;
+  
+}
+
+.heading h2{
+  font-size: 0.3rem;
+  font-weight: 400;
+  opacity: 0;
+}
+
+.toggle-button {
+  position: absolute;
+  all:unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 0.7rem;
+  width: 0.7rem;
+}
+
+.sideBody{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding:5% 0% 0px 15%;
+  border-radius: 0 0 1rem 1rem;
+  
+}
+
+.sideCollapsed.active ~ .sideNav{
+  left: 250px;
+  width:calc(100%-250px);
+}
+
+.sideCollapsed.active{
+  width: 24rem;
+}
+
+.sideCollapsed.active .heading h2{
+  font-size: 1.3rem;
+  opacity: 1;
+}
+
+.sideCollapsed.active .sideBody1{
+  display: none;
+}
+
+.sideCollapsed.active .sideBody2{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin-left: 5%;
+  border-radius: 0.5rem;
+  row-gap: 1rem;
+}
+
+.sideCollapsed.active .toggle-button{
+  transform: rotate(180deg)
+}
+
+
+.sideNav{
+    width: 5rem;
+    height: 40vh;
+    overflow: hidden;
+    position: fixed;
+    top:15%;
+    right: 0;
+    background: rgb(253, 253, 253);
+    border-radius:  1rem 0 0 1rem;
+    box-shadow: 0px -6px 6px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+
+  }
+
+  .leftSide{
+    background-color: black;
+    border-radius:  1rem 0 0 1rem ;
+    width: 2.5rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .leftSide i{
+    color: #f0f0f0;
+    margin-top: 1.2rem;
+    cursor: pointer;
+  }
+
+  .leftSide p{
+    font-size: 0.8rem;
+    writing-mode: vertical-lr;
+    color: #f0f0f0;
+    font-weight: 400;
+    letter-spacing:0.7rem;
+  }
+
+
+  .button-container {
+  position: relative;
+  height: 100vh;
+  row-gap: 2rem;
+}
+
+.floating-button {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(0, 41, 255);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button:nth-child(1) {
+  bottom: 1rem;
+  right: 3rem;
+}
+
+.floating-button:nth-child(2) {
+  bottom: 6rem;
+  right: 3rem;
+}
+
+.floating-button:nth-child(3) {
+  bottom: 11rem;
+  right: 3rem;
+}
